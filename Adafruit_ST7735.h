@@ -64,6 +64,11 @@ public:
 
   void setRotation(uint8_t m);
 
+  // Expose these functions for direct command/data access
+  void writecommand(uint8_t c); // Write a command byte
+  void writedata(uint8_t d);    // Write a data byte
+
+
 private:
   uint8_t tabcolor;
 };
